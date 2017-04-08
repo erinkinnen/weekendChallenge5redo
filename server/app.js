@@ -7,6 +7,8 @@ var db = require('./modules/db.js');
 
 app.set('port', (process.env.PORT || 2000));
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('server/public'));
 
 app.use('/', router);

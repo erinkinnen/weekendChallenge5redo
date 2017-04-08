@@ -12,19 +12,19 @@ var MovieSchema = mongoose.Schema({
 
 var Movie = mongoose.model('movie', MovieSchema, 'movie');
 
-router.get('/', function(req,res){
+router.get('/movie', function(req,res){
 
 });
 
-router.post('/', function(req,res){
+router.post('/search', function(req,res){
 
 });
 
-router.put('/', function(req,res){
+router.put('/data', function(req,res){
 
 });
 
-router.delete('/', function(req,res){
+router.delete('/movie', function(req,res){
 
 });
 
