@@ -18,9 +18,9 @@
       </div>
       <div class="row col-md-6">
         <div ng-controller="SearchController">
-          <input type="text" placeholder="Movie Title">
-          <button type="button" ng-click="">Search</button>
-          <p>{{movieFromOMDB.response.data}}</p>
+          <input type="text" ng-model='searchedMovie.title' placeholder="Movie Title">
+          <button type="button" ng-click="searchMovie()">Search</button>
+          <p>{{searchedMovie.title}}</p>
         </div>
       </div>
 
